@@ -8,6 +8,7 @@ endif
 # Set all versions
 DATE := $(shell date -u +%Y%m%d)
 WAVE_VERSION := $(TARGET_PRODUCT)-$(WAVE_BASE_VERSION)-$(DATE)-$(shell date -u +%H%M)-$(WAVE_BUILD_TYPE)
+TARGET_BACON_NAME := $(WAVE_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
