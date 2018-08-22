@@ -1,4 +1,3 @@
-
 # Copyright (C) 2018 WaveOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,3 +89,8 @@ ifneq ($(TARGET_BUILD_VARIANT),user) PRODUCT_PACKAGES += \
 # Charger images
 PRODUCT_PACKAGES += \
     charger_res_images
+
+# Turbo
+PRODUCT_PACKAGES += \
+     Turbo \
+     turbo.xml
