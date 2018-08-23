@@ -30,4 +30,5 @@ endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    vendor/wave/overlay/common
+    vendor/wave/overlay/common \
+    vendor/wave/overlay/themes
