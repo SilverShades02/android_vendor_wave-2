@@ -61,6 +61,9 @@ include vendor/wave/config/packages.mk
 # Branding
 include vendor/wave/config/branding.mk
 
+# Themes
+include vendor/themes/common.mk
+
 # Bootanimation
 #include vendor/wave/config/bootanimation.mk
 
