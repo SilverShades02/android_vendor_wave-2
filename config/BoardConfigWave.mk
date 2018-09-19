@@ -3,3 +3,5 @@ include vendor/wave/config/BoardConfigQcom.mk
 endif
 
 include vendor/wave/config/BoardConfigKernel.mk
+
+include vendor/wave/config/BoardConfigSoong.mk
