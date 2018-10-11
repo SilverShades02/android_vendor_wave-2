@@ -64,8 +64,5 @@ include vendor/wave/config/branding.mk
 # Themes
 include vendor/themes/common.mk
 
-# Bootanimation
-#include vendor/wave/config/bootanimation.mk
-
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/wave/overlay/common
