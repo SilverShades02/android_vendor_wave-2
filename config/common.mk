@@ -35,3 +35,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Bootanimation
 $(call inherit-product, vendor/wave/config/bootanimation.mk)
+
+# Apns
+PRODUCT_COPY_FILES += \
+      vendor/wave/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
