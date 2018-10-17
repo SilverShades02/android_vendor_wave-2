@@ -32,3 +32,6 @@ endif
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/wave/overlay/common \
     vendor/wave/overlay/themes
+
+# Bootanimation
+$(call inherit-product, vendor/wave/config/bootanimation.mk)
