@@ -82,9 +82,11 @@ PRODUCT_PACKAGES += \
     librsjni
 
 # These packages are excluded from user builds
-ifneq ($(TARGET_BUILD_VARIANT),user) PRODUCT_PACKAGES += \
+ifneq ($(TARGET_BUILD_VARIANT),user)
+PRODUCT_PACKAGES += \
     procmem \
-    procrank endif
+    procrank
+endif
 
 # Charger images
 PRODUCT_PACKAGES += \
