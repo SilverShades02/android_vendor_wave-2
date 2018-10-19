@@ -16,12 +16,14 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     Calendar \
-    ExactCalculator \
     LatinIME \
     Boat \
-    messaging \
     Stk \
-    WellbeingPrebuilt
+    WellbeingPrebuilt \
+    GCalc \
+    GContacts \
+    GMsgs \
+    GDialer
 
 # Extra tools
 PRODUCT_PACKAGES += \
