@@ -1,2 +1,4 @@
-. "$(gettop)/vendor/wave/build/envsetup.sh"
- wave_device_combos
+for combo in $(curl -s https://raw.githubusercontent.com/Wave-Project/android_vendor_wave/9.0/wave.devices | sed -e 's/#.*$//' | awk '{printf "wave_%s-%s\n", $1, $2}')
+do
+    add_lunch_combo $combo
+done
