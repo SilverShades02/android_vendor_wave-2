@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WAVE_MOD_VERSION = v9.0
+WAVE_MOD_VERSION = Destiny
 
 ifndef WAVE_BUILD_TYPE
     WAVE_BUILD_TYPE := UNOFFICIAL
@@ -47,7 +47,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.wave.releasetype=$(WAVE_BUILD_TYPE) \
   ro.mod.version=$(WAVE_MOD_VERSION)
 
-WAVE_DISPLAY_VERSION := Wave-$(WAVE_MOD_VERSION)
+WAVE_DISPLAY_VERSION := WaveOS-$(WAVE_MOD_VERSION)-$(WAVE_BUILD_TYPE)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.wave.display.version=$(WAVE_DISPLAY_VERSION)
