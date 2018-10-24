@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-WAVE_MOD_VERSION = Destiny
+WAVE_MOD_VERSION = v1.0
 
 ifndef WAVE_BUILD_TYPE
     WAVE_BUILD_TYPE := UNOFFICIAL
@@ -40,12 +40,12 @@ ifeq ($(WAVE_OFFICIAL),true)
     endif
 endif
 
-WAVE_VERSION := Wave-$(WAVE_MOD_VERSION)-$(CURRENT_DEVICE)-$(WAVE_BUILD_TYPE)-$(shell date -u +%Y%m%d)
+WAVE_VERSION := WaveOS-$(WAVE_MOD_VERSION)-$(CURRENT_DEVICE)-$(WAVE_BUILD_TYPE)-$(shell date -u +%Y%m%d)
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.wave.version=$(WAVE_VERSION) \
   ro.wave.releasetype=$(WAVE_BUILD_TYPE) \
-  ro.mod.version=$(WAVE_MOD_VERSION)
+  ro.modversion=$(WAVE_MOD_VERSION)
 
 WAVE_DISPLAY_VERSION := WaveOS-$(WAVE_MOD_VERSION)-$(WAVE_BUILD_TYPE)
 
