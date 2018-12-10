@@ -24,6 +24,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.rotation_locked=true \
     ro.build.selinux=1
 
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
 PRODUCT_COPY_FILES += \
     vendor/wave/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/wave/prebuilt/common/bin/sysinit:system/bin/sysinit
